@@ -2,39 +2,35 @@
 <html lang="en">
   <head>
     <title>New Tab</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <style>
       @import url('https://fonts.googleapis.com/css?family=Pacifico');
       html, body {
         height: 100%;
       }
-      html {
-        background: url(laurenandsimone.jpg) no-repeat center center fixed;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
-      }
       body {
         font: 7vmax Pacifico, serif;
-        margin: 0;
         display: flex;
         align-items: center;
         justify-content: center;
         text-align: center;
       }
     </style>
-
   </head>
   <body>
     <p id="message"></p>
     <script>
       var date = new Date();
+      var html = document.documentElement;
       if (date.getMonth() == 11 && date.getDate() == 25) {
         var message = 'Happy birthday, Shelli. You\'re the bomb.'
       } else {
         var message = 'Shelli, you\'re the bomb.';
       }
       document.getElementById("message").innerHTML = message;
+      html.style.background = 'url(images/laurenandsimone.jpg) no-repeat center center fixed';
+      html.style.backgroundSize = 'cover';
     </script>
   </body>
 </html>
