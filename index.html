@@ -9,10 +9,6 @@
       html, body {
         height: 100%;
       }
-      html {
-        background: url(images/laurenandsimone.jpg) no-repeat center center fixed;
-        background-size: cover;
-      }
       body {
         font: 7vmax Pacifico, serif;
         display: flex;
@@ -26,12 +22,15 @@
     <p id="message"></p>
     <script>
       var date = new Date();
+      var html = document.documentElement;
       if (date.getMonth() == 11 && date.getDate() == 25) {
         var message = 'Happy birthday, Shelli. You\'re the bomb.'
       } else {
         var message = 'Shelli, you\'re the bomb.';
       }
       document.getElementById("message").innerHTML = message;
+      html.style.background = 'url(images/laurenandsimone.jpg) no-repeat center center fixed';
+      html.style.backgroundSize = 'cover';
     </script>
   </body>
 </html>
