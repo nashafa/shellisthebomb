@@ -27,19 +27,20 @@
       var date = new Date();
       var html = document.documentElement;
       var message = 'Shelli, you\'re the bomb.';
-      html.style.background = 'url(images/laurenandsimone.jpg) no-repeat center center fixed';
+      var picture = 'url(images/laurenandsimone.jpg) no-repeat center center fixed';
       function getThanksgivingDate() {
         var nov1 = new Date(date.getFullYear(), 10, 1);
         return 28 - ((nov1.getDay() + 2) % 7);
       }
       if (date.getMonth() == 11 && date.getDate() == 25) {
-        var message = 'Happy birthday, Shelli. You\'re the bomb.';
+        message = 'Happy birthday, Shelli. You\'re the bomb.';
       } else if (date.getMonth() == 0 && date.getDate() == 1) {
-        var message = 'Happy new year, Shelli. You\'re the bomb.';
+        message = 'Happy new year, Shelli. You\'re the bomb.';
       } else if (date.getMonth() == 10 && date.getDate() == getThanksgivingDate()) {
-        var message = 'Happy Thanksgiving, Shelli. You\'re the bomb.';
-      } 
+        message = 'Happy Thanksgiving, Shelli. You\'re the bomb.';
+      }
       document.getElementById("message").innerHTML = message;
+      html.style.background = picture;
       html.style.backgroundSize = 'cover';
     </script>
   </body>
