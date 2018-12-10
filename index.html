@@ -34,9 +34,11 @@
       }
       if (date.getMonth() == 11 && date.getDate() == 25) {
         var message = 'Happy birthday, Shelli. You\'re the bomb.';
+      } else if (date.getMonth() == 0 && date.getDate() == 1) {
+        var message = 'Happy new year, Shelli. You\'re the bomb.';
       } else if (date.getMonth() == 10 && date.getDate() == getThanksgivingDate()) {
         var message = 'Happy Thanksgiving, Shelli. You\'re the bomb.';
-      }
+      } 
       document.getElementById("message").innerHTML = message;
       html.style.backgroundSize = 'cover';
     </script>
